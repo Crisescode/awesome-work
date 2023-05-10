@@ -26,4 +26,13 @@ alias krmpo='kubectl delete pod'
 alias krmsvc='kubectl delete service'
 alias krmdep='kubectl delete deployment'
 
-alias kgpooyaml='kubectl get pods -o=yaml'
+alias kgpooyaml='kubectl get pod -o=yaml'
+alias kgsvcoyaml='kubectl get service -o=yaml'
+
+# with namespace
+alias ksys='kubectl --namespace=kube-system'
+alias ksysg='kubectl get --namespace=kube-system'
+alias ksysd='kubectl describe --namespace=kube-system'
+alias ksysex='kubectl exec -i -t --namespace=kube-system'
+alias ksyslo='kubectl logs -f --namespace=kube-system'
+alias ksysrm='kubectl delete --namespace=kube-system'
