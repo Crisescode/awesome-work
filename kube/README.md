@@ -1,0 +1,1 @@
+[ -f ~/.kube/.kubectl_aliases ] && source ~/.kube/.kubectl_aliases
